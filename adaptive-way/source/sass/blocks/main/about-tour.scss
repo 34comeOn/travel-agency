@@ -1,0 +1,68 @@
+.about-tour {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 1170px;
+    grid-template-columns: 31% 69%;
+    grid-template-rows: 104px 596px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 233px;
+
+    &:after {
+      position: absolute;
+      top: 117px;
+      right: -137px;
+      width: 1444px;
+      height: 1208px;
+      content: "";
+      background-image: url("../img/europe-map.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+.about-tour__menu-wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+    grid-column: 1/3;
+  }
+}
+
+.about-tour__info-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}
+
+.about-tour__comments-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 115px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}

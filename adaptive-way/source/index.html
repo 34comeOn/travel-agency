@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>
+      Туристическая компания «Way»
+    </title>
+    <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  </head>
+
+  <body class="page__body">
+
+    <header class="page-header">
+      <div class="page-header__wrapper page-header__wrapper--opened page-header__wrapper--nojs">
+        <div class="page-header__burger-box">
+          <a class="page-header__link" href="#" aria-label="логотип турфирмы">
+            <svg class="page-header__logo-mobile" width="44" height="17" viewBox="0 0 44 15" fill="none">
+              <path d="M21.4021 0L17.0223 13.1753H13.6943L10.7489 4.25374L7.70783 13.1753H4.39901L0 0H3.21319L6.23512 9.26035L9.39093 0H12.2599L15.32 9.33564L18.4376 0H21.4021Z" fill="#141517"/>
+              <path d="M26.3061 2.89856C27.8999 2.89856 29.124 3.275 29.9783 4.02788C30.8326 4.7682 31.2597 5.89124 31.2597 7.39699V13.1753H28.4673V11.9142C27.9063 12.8553 26.8607 13.3259 25.3306 13.3259C24.5401 13.3259 23.8515 13.1941 23.265 12.9306C22.6912 12.6671 22.2513 12.3032 21.9453 11.8389C21.6393 11.3747 21.4863 10.8477 21.4863 10.2579C21.4863 9.31682 21.8433 8.57649 22.5573 8.03693C23.2841 7.49737 24.3998 7.22759 25.9044 7.22759H28.276C28.276 6.58765 28.0784 6.09828 27.6831 5.75949C27.2879 5.40815 26.6949 5.23247 25.9044 5.23247C25.3561 5.23247 24.8142 5.32031 24.2787 5.49598C23.7559 5.6591 23.3096 5.88497 22.9399 6.17357L21.8688 4.12198C22.4298 3.733 23.0992 3.43185 23.877 3.21854C24.6676 3.00522 25.4773 2.89856 26.3061 2.89856ZM26.0765 11.3496C26.5866 11.3496 27.0392 11.2366 27.4345 11.0108C27.8298 10.7724 28.1103 10.4273 28.276 9.97558V8.94038H26.2295C25.0055 8.94038 24.3934 9.33564 24.3934 10.1262C24.3934 10.5026 24.5401 10.8037 24.8333 11.0296C25.1394 11.2429 25.5538 11.3496 26.0765 11.3496Z" fill="#141517"/>
+              <path d="M43.9867 3.04914L39.339 13.7964C38.8672 14.9634 38.2807 15.7853 37.5794 16.2621C36.8909 16.7389 36.0557 16.9773 35.0739 16.9773C34.5384 16.9773 34.0092 16.8957 33.4864 16.7326C32.9636 16.5695 32.5365 16.3436 32.205 16.055L33.2952 13.9658C33.5247 14.1666 33.7861 14.3234 34.0793 14.4364C34.3853 14.5493 34.685 14.6058 34.9783 14.6058C35.3863 14.6058 35.7178 14.5054 35.9728 14.3046C36.2278 14.1164 36.4573 13.7964 36.6614 13.3447L36.6996 13.2506L32.2432 3.04914H35.3225L38.2106 9.91912L41.1177 3.04914H43.9867Z" fill="#141517"/>
+              <path d="M44 3.04834L39.3523 13.7956C38.8805 14.9626 38.294 15.7845 37.5927 16.2613C36.9042 16.7381 36.069 16.9765 35.0872 16.9765C34.5516 16.9765 34.0225 16.8949 33.4997 16.7318C32.9769 16.5687 32.5498 16.3428 32.2183 16.0542L33.3084 13.965C33.538 14.1658 33.7994 14.3226 34.0926 14.4356C34.3986 14.5485 34.6983 14.605 34.9916 14.605C35.3996 14.605 35.7311 14.5046 35.9861 14.3038C36.2411 14.1156 36.4706 13.7956 36.6747 13.3439L36.7129 13.2498L38.2239 9.91832L41.131 3.04834H44Z" fill="#FE7865"/>
+            </svg>
+            <svg class="page-header__logo-desktop" width="57" height="22" viewBox="0 0 57 22" fill="none">
+              <path d="M27.7339 0L22.0582 17.0732H17.7457L13.9289 5.51219L9.98817 17.0732H5.70045L0 0H4.1638L8.07976 12L12.1692 0H15.8869L19.8524 12.0976L23.8923 0H27.7339Z" fill="#141517"/>
+              <path d="M34.0886 3.7561C36.154 3.7561 37.7402 4.2439 38.8473 5.21951C39.9543 6.17886 40.5078 7.63414 40.5078 9.58536V17.0732H36.8893V15.439C36.1623 16.6585 34.8074 17.2683 32.8246 17.2683C31.8002 17.2683 30.9079 17.0976 30.1479 16.7561C29.4043 16.4146 28.8343 15.9431 28.4378 15.3415C28.0412 14.7398 27.8429 14.0569 27.8429 13.2927C27.8429 12.0732 28.3056 11.1138 29.2309 10.4146C30.1727 9.71545 31.6184 9.36585 33.5681 9.36585H36.6414C36.6414 8.53658 36.3853 7.90244 35.8731 7.46342C35.3609 7.00813 34.5926 6.78049 33.5681 6.78049C32.8577 6.78049 32.1554 6.89431 31.4615 7.12195C30.784 7.33333 30.2057 7.62602 29.7265 8L28.3386 5.34146C29.0656 4.8374 29.9331 4.44715 30.941 4.17073C31.9654 3.89431 33.0146 3.7561 34.0886 3.7561ZM33.7912 14.7073C34.4521 14.7073 35.0387 14.561 35.5509 14.2683C36.0631 13.9593 36.4266 13.5122 36.6414 12.9268V11.5854H33.9895C32.4033 11.5854 31.6102 12.0976 31.6102 13.122C31.6102 13.6098 31.8002 14 32.1802 14.2927C32.5768 14.5691 33.1138 14.7073 33.7912 14.7073Z" fill="#141517"/>
+              <path d="M57 3.95122L50.9774 17.878C50.366 19.3902 49.6059 20.4553 48.6972 21.0732C47.8049 21.6911 46.7227 22 45.4504 22C44.7564 22 44.0707 21.8943 43.3933 21.6829C42.7158 21.4715 42.1623 21.1789 41.7327 20.8049L43.1454 18.0976C43.4429 18.3577 43.7816 18.561 44.1616 18.7073C44.5582 18.8537 44.9465 18.9268 45.3265 18.9268C45.8552 18.9268 46.2848 18.7967 46.6153 18.5366C46.9457 18.2927 47.2432 17.878 47.5075 17.2927L47.5571 17.1707L41.7823 3.95122H45.7726L49.5151 12.8537L53.2823 3.95122H57Z" fill="#141517"/>
+              <path d="M57.0173 3.9502L50.9946 17.877C50.3833 19.3892 49.6232 20.4543 48.7145 21.0721C47.8222 21.69 46.74 21.999 45.4677 21.999C44.7737 21.999 44.088 21.8933 43.4106 21.6819C42.7331 21.4705 42.1796 21.1778 41.75 20.8039L43.1627 18.0965C43.4601 18.3567 43.7989 18.5599 44.1789 18.7063C44.5754 18.8526 44.9637 18.9258 45.3438 18.9258C45.8725 18.9258 46.3021 18.7957 46.6326 18.5356C46.963 18.2917 47.2604 17.877 47.5248 17.2917L47.5744 17.1697L49.5323 12.8526L53.2996 3.9502H57.0173Z" fill="#FE7865"/>
+            </svg>
+          </a>
+          <button class="page-header__toggle button" type="button" aria-label="Кнопка открыть и закрыть меню">
+          </button>
+        </div>
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link content-reference" href="#tour">
+                О путешествии
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link content-reference" href="#prices">
+                Цены
+              </a>
+            </li>
+            <li class="navigation__item navigation__item--phone">
+              <a class="navigation__link contacts-phone contacts-phone--navigation contacts-phone--icon" href="tel:+749978468446">
+                +7 (499) -784-684-46
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main class="main">
+      <h1 class="visually-hidden">
+        Купить путёвку в Европу
+      </h1>
+
+      <section class="intro">
+        <div class="intro__wrapper">
+          <div class="intro__center">
+            <h2 class="intro__title title">
+              Путешествие&Tab;<br class="intro__br-desktop"> по&Tab;<br class="intro__br-mobile"> Европе
+            </h2>
+            <p class="intro__text text">
+              В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
+            </p>
+            <a class="button button--basis button--link" href="#whatch-tour">
+              смотреть тур
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="places">
+        <div class="places__wrapper">
+          <h2 class="places__title title" id="tour">
+            Места&Tab;<br class="intro__br-desktop"> посещения
+          </h2>
+          <p class="places__text text">
+            Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
+          </p>
+          <ul class="places__list list">
+            <li class="places__item">
+              <a class="places__link" href="#about-greece" aria-label="выбрать тур в Грецию">
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/gallery/greece-desktop@1x.jpg 1x, img/gallery/greece-desktop@2x.jpg 2x">
+                  <img class="places__image" width="288" height="425" src="img/gallery/greece@1x.jpg" srcset="img/gallery/greece@1x.jpg 1x, img/gallery/greece@2x.jpg 2x" alt="Большая вилла на вершине утёса">
+                </picture>
+                <div class="places__name">
+                  Греция
+                </div>
+              </a>
+            </li>
+            <li class="places__item">
+              <a class="places__link" href="#about-albania" aria-label="выбрать тур в Албанию">
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/gallery/albania-desktop@1x.jpg 1x, img/gallery/albania-desktop@2x.jpg 2x">
+                  <img class="places__image" width="288" height="425" src="img/gallery/albania@1x.jpg" srcset="img/gallery/albania@1x.jpg 1x, img/gallery/albania@2x.jpg 2x" alt="Лазурное море омывает песчаный пляж">
+                </picture>
+                <div class="places__name">
+                  Албания
+                </div>
+              </a>
+            </li>
+            <li class="places__item">
+              <a class="places__link" href="#about-macedonia" aria-label="выбрать тур в Македонию">
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/gallery/macedonia-desktop@1x.jpg 1x, img/gallery/macedonia-desktop@2x.jpg 2x">
+                  <img class="places__image" width="288" height="425" src="img/gallery/macedonia@1x.jpg" srcset="img/gallery/macedonia@1x.jpg 1x, img/gallery/macedonia@2x.jpg 2x" alt="Старинная церковь на фоне лазурного моря">
+                </picture>
+                <div class="places__name">
+                  Македония
+                </div>
+              </a>
+            </li>
+            <li class="places__item">
+              <a class="places__link" href="#about-montenegro" aria-label="выбрать тур в Черногорию">
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/gallery/montenegro-desktop@1x.jpg 1x, img/gallery/montenegro-desktop@2x.jpg 2x">
+                  <img class="places__image" width="288" height="425" src="img/gallery/montenegro@1x.jpg" srcset="img/gallery/montenegro@1x.jpg 1x, img/gallery/montenegro@2x.jpg 2x" alt="Узкая река лазурного цвете течёт в лесной местности">
+                </picture>
+                <div class="places__name">
+                  Черногория
+                </div>
+              </a>
+            </li>
+            <li class="places__item">
+              <a class="places__link" href="#about-croatia" aria-label="выбрать тур в Хорватию">
+                <picture>
+                  <source media="(min-width: 1920px)" srcset="img/gallery/croatia-desktop@1x.jpg 1x, img/gallery/croatia-desktop@2x.jpg 2x">
+                  <img class="places__image" width="288" height="425" src="img/gallery/croatia@1x.jpg" srcset="img/gallery/croatia@1x.jpg 1x, img/gallery/croatia@2x.jpg 2x" alt="Крупные сталактиты в пещере">
+                </picture>
+                <div class="places__name">
+                  Хорватия
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about-tour">
+        <h2 class="about-tour__title visually-hidden">
+          Информация о выбраном туре
+        </h2>
+
+        <div class="about-tour__menu-wrapper tour-menu">
+          <ul class="tour-menu__list list" id="whatch-tour">
+            <li>
+              <a class="tour-menu__item" id="about-greece" href="#greece" aria-label="информация про тур в Грецию">Греция</a>
+            </li>
+            <li>
+              <a class="tour-menu__item" id="about-albania" href="#albania" aria-label="информация про тур в Албанию">Албания</a>
+            </li>
+            <li>
+              <a class="tour-menu__item" id="about-macedonia" href="#macedonia" aria-label="информация про тур в Македонию">Македония</a>
+            </li>
+            <li>
+              <a class="tour-menu__item" id="about-montenegro" href="#montenegro" aria-label="информация про тур в Черногорию">Черногория</a>
+            </li>
+            <li>
+              <a class="tour-menu__item" id="about-croatia" href="#croatia" aria-label="информация про тур в Хорватию">Хорватия</a>
+            </li>
+          </ul>
+        </div>
+        <div class="about-tour__info-wrapper tour-info">
+          <ul class="tour-info__list list">
+            <li class="tour-info__item">
+              <h3 class="tour-info__title title" id="greece">
+                Греция
+              </h3>
+              <p class="tour-info__text text">
+                На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+              </p>
+            </li>
+            <li class="tour-info__item visually-hidden">
+              <h3 class="tour-info__title title" id="albania">
+                Албания
+              </h3>
+              <p class="tour-info__text text">
+                В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
+              </p>
+            </li>
+            <li class="tour-info__item visually-hidden">
+              <h3 class="tour-info__title title" id="macedonia">
+                Македония
+              </h3>
+              <p class="tour-info__text text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </li>
+            <li class="tour-info__item visually-hidden">
+              <h3 class="tour-info__title title" id="montenegro">
+                Черногория
+              </h3>
+              <p class="tour-info__text text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </li>
+            <li class="tour-info__item visually-hidden">
+              <h3 class="tour-info__title title" id="croatia">
+                Хорватия
+              </h3>
+              <p class="tour-info__text text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </li>
+          </ul>
+          <a class="tour-info__button button--basis button--description button--open-popup button" href="#">
+            купить тур сейчас
+          </a>
+        </div>
+        <div class="about-tour__comments-wrapper comments">
+          <h3 class="comments__title title">
+            Отзывы
+          </h3>
+          <ul class="comments__list list">
+            <li class="comments__item comment-card">
+              <div class="comment-card__box">
+                <p class="comment-card__text">
+                  Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
+                </p>
+                <div class="comment-card__person-box">
+                  <img class="comment-card__avatar" width="38" height="38" src="img/avatars/greece-avatar.jpg" alt="фотография автора комментария">
+                  <span class="comment-card__author">
+                    Влада Голицина
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="comments__item comment-card comment-card--hidden">
+              <div class="comment-card__box">
+                <p class="comment-card__text">
+                  Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)
+                </p>
+                <div class="comment-card__person-box">
+                  <img class="comment-card__avatar" width="38" height="38" src="img/avatars/albania-avatar.jpg" alt="фотография автора комментария">
+                  <span class="comment-card__author">
+                    Маришка
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="prices">
+        <h2 class="prices__title visually-hidden">
+          Цены на туры по Европе
+        </h2>
+        <div class="prices__wrapper">
+          <div class="prices__header price-info">
+            <h3 class="price-info__title title" id="prices">
+              Цены
+            </h3>
+            <p class="price-info__text">
+              Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+            </p>
+            <span class="price-info__feedback-slogan">
+              Свяжитесь с нами
+            </span>
+            <a class="price-info__phone contacts-phone contacts-phone--prices contacts-phone--icon" href="tel:+749978468446">
+              +7 (499) -784-684-46
+            </a>
+          </div>
+          <div class="prices__options tour-versions">
+            <ul class="tour-versions__list list">
+              <li class="tour-versions__item tour-card">
+                <h4 class="tour-card__title title">
+                  Комплексный
+                </h4>
+                <span class="tour-card__price">
+                  $1999
+                </span>
+                <p class="tour-card__descriprion">
+                  Ознакомьтесь с перечнем того, что входит в данный пакет
+                </p>
+                <ul class="tour-card__list spec list">
+                  <li class="spec__item">
+                    Разработанный маршрут с гидом группы
+                  </li>
+                  <li class="spec__item">
+                    Перелет, трансфер и проживание в отелях
+                  </li>
+                  <li class="spec__item">
+                    Завтраки, ужины в отелях и ланчи на природе
+                  </li>
+                  <li class="spec__item">
+                    Экскурсии по удивительно красивым местам Европы
+                  </li>
+                </ul>
+                <a class="button--basis button--tour button--open-popup button" href="#">
+                  купить тур сейчас
+                </a>
+              </li>
+              <li class="tour-versions__item tour-card">
+                <h4 class="tour-card__title title">
+                  Экономный
+                </h4>
+                <span class="tour-card__price">
+                  $1399
+                </span>
+                <p class="tour-card__descriprion">
+                  Ознакомьтесь с перечнем того, что входит в данный пакет
+                </p>
+                <ul class="tour-card__list spec list">
+                  <li class="spec__item">
+                    Разработанный маршрут с гидом группы
+                  </li>
+                  <li class="spec__item">
+                    Перелет и трансфер
+                  </li>
+                  <li class="spec__item">
+                    Проживание в хостелах при отелях
+                  </li>
+                  <li class="spec__item">
+                    Только завтраки в отелях
+                  </li>
+                  <li class="spec__item">
+                    Экскурсии по удивительно красивым местам Европы
+                  </li>
+                </ul>
+                <a class="button--basis button--tour button--open-popup button" href="#">
+                  купить тур сейчас
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <h2 class="feedback__title visually-hidden">
+          Задайте ваши вопросы про туры по Европе
+        </h2>
+
+        <div class="feedback__wrapper">
+          <div class="feedback__form-block">
+            <h3 class="feedback__title title">
+              У Вас остались вопросы?
+            </h3>
+            <p class="feedback__instruction">
+              Оставьте свой номер или e-mail и мы свяжемся с Вами
+            </p>
+            <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="feedback__fieldset">
+                <ul class="feedback__list list">
+                  <li class="feedback__item">
+                    <input class="feedback__input feedback__input--phone" type="tel" name="user-phone" required placeholder="+7 Введите 10 цифр номера" aria-label="вписать номер телефона для обратной связи">
+                  </li>
+                  <li class="feedback__item">
+                    <input class="feedback__input" type="email" name="user-email" placeholder="E-mail" aria-label="вписать e-mail для обратной связи">
+                  </li>
+                </ul>
+                <button class="feedback__submit-button button--feedback button--basis button" type="submit">
+                  отправить
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__trip-block next-trip">
+          <span class="next-trip__title">
+            Следующие путешествия
+          </span>
+          <ul class="next-trip__list list">
+            <li class="next-trip__item trip-column">
+              <ul class="trip-column__list list">
+                <li class="trip-column__item">
+                  Марсель
+                </li>
+                <li class="trip-column__item">
+                  Ним
+                </li>
+                <li class="trip-column__item">
+                  Монпелье
+                </li>
+                <li class="trip-column__item">
+                  Барселона
+                </li>
+                <li class="trip-column__item">
+                  Пальма
+                </li>
+              </ul>
+            </li>
+            <li class="next-trip__item trip-column">
+              <ul class="trip-column__list list">
+                <li class="trip-column__item">
+                  Сардиния
+                </li>
+                <li class="trip-column__item">
+                  Палермо
+                </li>
+                <li class="trip-column__item">
+                  Катания
+                </li>
+                <li class="trip-column__item">
+                  Неаполь
+                </li>
+                <li class="trip-column__item">
+                  Рим
+                </li>
+              </ul>
+            </li>
+            <li class="next-trip__item trip-column">
+              <ul class="trip-column__list list">
+                <li class="trip-column__item">
+                  Корс
+                </li>
+                <li class="trip-column__item">
+                  Ницца
+                </li>
+                <li class="trip-column__item">
+                  Монако
+                </li>
+                <li class="trip-column__item">
+                  Динь-ле-Бен
+                </li>
+                <li class="trip-column__item">
+                  Гренобль
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts-block contacts">
+          <span class="contacts__title">
+            Наши контакты
+          </span>
+          <a class="contacts__email" href="mailto:puteshestviemechta@gmail.ru" aria-label="e-mail турфирмы">puteshestviemechta@gmail.ru</a>
+          <a class="contacts-phone contacts-phone--footer contacts-phone--icon" href="tel:+749978468446" aria-label="позвонить по телефону турфирмы">
+            +7 (499) -784-684-46
+          </a>
+        </div>
+        <div class="footer__corp-block corporate-tour">
+          <h2 class="corporate-tour__title">
+            Корпоративные путешествия
+          </h2>
+          <p class="corporate-tour__text">
+            Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
+          </p>
+
+        </div>
+      </div>
+    </footer>
+
+    <div class="buy-popup popup popup--hidden">
+      <div class="buy-popup__wrapper">
+        <div class="buy-popup__picture-block">
+        </div>
+        <div class="buy-popup__form-block">
+          <button class="buy-popup__close-button" type="button" aria-label="кнопка закрытия всплывающего окна">
+          </button>
+          <h3 class="buy-popup__title title">
+            Купить тур
+          </h3>
+          <form class="buy-popup__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="buy-popup__fieldset">
+              <ul class="buy-popup__list list">
+                <li class="buy-popup__item">
+                  <input class="buy-popup__input buy-popup__input--phone" type="tel" name="user-phone" required placeholder="+7 Введите 10 цифр номера" aria-label="вписать номер телефона для обратной связи">
+                </li>
+                <li class="buy-popup__item">
+                  <input class="buy-popup__input" type="email" name="user-email" placeholder="E-mail" aria-label="вписать e-mail для обратной связи">
+                </li>
+              </ul>
+              <a class="buy-popup__submit-button button--basis button--buy-popup button" href="#">
+                отправить
+              </a>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="success-popup popup popup--hidden">
+      <div class="success-popup__wrapper">
+        <button class="success-popup__close-button" type="button" aria-label="кнопка закрытия всплывающего окна">
+        </button>
+        <p class="success-popup__text">
+          Форма успешно отправлена,<br> спасибо! :)
+        </p>
+      </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

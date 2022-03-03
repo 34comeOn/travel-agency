@@ -1,0 +1,127 @@
+.comment-card {
+  position: relative;
+  background-image: url("../img/gallery/comments/greece-comment.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 415px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/gallery/comments/greece-comment-tablet.jpg");
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/gallery/comments/greece-comment-desktop.jpg");
+    background-position: left;
+    height: 596px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.comment-card__box {
+  background-color: $white;
+  width: 268px;
+  height: 431px;
+  margin-top: 50px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    position: absolute;
+    top: 80px;
+    left: 193px;
+    width: 382px;
+    height: 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 145px;
+    left: 320px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 68px;
+    left: 101px;
+    height: 1px;
+    width: 67px;
+    background-color: $bright;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: 78px;
+      left: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 48px;
+    }
+  }
+}
+
+.comment-card__image {
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-left: 84px;
+    width: 431px;
+    height: 596px;
+  }
+}
+
+.comment-card__text {
+  display: block;
+  margin: 0 auto;
+  width: 225px;
+  padding-top: 88px;
+  font-size: 13px;
+  line-height: 28px;
+  color: $opacity-dark;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 319px;
+    padding-top: 99px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+  }
+}
+
+.comment-card__person-box {
+  display: flex;
+  height: 73px;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 68px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 29px;
+    width: 351px;
+  }
+}
+
+.comment-card__avatar {
+  border-radius: 50%;
+}
+
+.comment-card__author {
+  font-size: 15px;
+  padding-left: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+  }
+}

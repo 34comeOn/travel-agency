@@ -1,0 +1,128 @@
+.buy-popup__wrapper {
+  width: 320px;
+  height: 516px;
+  margin: 0 auto;
+  background-color: $white;
+  padding-bottom: 51px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 720px;
+    height: 444px;
+    display: flex;
+  }
+}
+
+.buy-popup__picture-block {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 334px;
+    height: 444px;
+    background-image: url("../img/gallery/popup/popup-image.jpg");
+    background-repeat: no-repeat;
+    background-color: lightblue;
+    background-position: center;
+  }
+}
+
+.buy-popup__close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 25px;
+  height: 22px;
+  margin-top: 18px;
+  align-self: flex-end;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 17px;
+    width: 29px;
+    height: 1px;
+    background-color: $close-button;
+    cursor: pointer;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.buy-popup__form-block {
+  width: $mobile-content;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-popup__title {
+  font-size: 26px;
+  line-height: 31px;
+  padding-top: 63px;
+  padding-bottom: 59px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+    padding-bottom: 56px;
+  }
+}
+
+.buy-popup__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.buy-popup__list {
+  width: $mobile-content;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 7px;
+    top: 9px;
+    left: 15px;
+    background-image: url("../img/asterisk.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      left: 24px;
+    }
+  }
+}
+
+.buy-popup__input {
+  width: $mobile-content;
+  padding: 0;
+  margin: 0;
+  height: 49px;
+  font-family: 'Montserrat-Regular', "Arial", sans-serif;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  box-sizing: border-box;
+  position: relative;
+
+  &--phone {
+    padding-left: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 267px;
+  }
+}

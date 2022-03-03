@@ -1,0 +1,36 @@
+.comments {
+  position: relative;
+}
+
+.comments__title {
+  position: relative;
+  top: 108px;
+  left: 0px;
+  display: block;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 115px;
+    left: 224px;
+    font-size: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 150px;
+    left: 437px;
+  }
+}
+
+.comments__list {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 84px;
+  }
+}

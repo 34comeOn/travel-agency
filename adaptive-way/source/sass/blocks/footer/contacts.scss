@@ -1,0 +1,15 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title {
+  font-family: 'Montserrat-Semibold', "Arial", sans-serif;
+  font-size: 18px;
+  display: block;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
+  }
+}

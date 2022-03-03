@@ -1,0 +1,12 @@
+.popup {
+  display: block;
+  position: fixed;
+  top: 5%;
+  right: 25%;
+  left: 25%;
+  z-index: 3;
+
+  &--hidden {
+    display: none;
+  }
+}

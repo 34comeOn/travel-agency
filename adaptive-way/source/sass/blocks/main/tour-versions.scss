@@ -1,0 +1,13 @@
+.tour-versions__list {
+  @media (min-width: $tablet-width) {
+    width: 626px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 770px;
+    height: 702px;
+  }
+}

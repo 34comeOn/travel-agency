@@ -1,0 +1,102 @@
+.navigation {
+  width: 320px;
+  height: 518px;
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 531px;
+    height: 100px;
+    display: flex;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 85px;
+  align-items: flex-start;
+  min-height: 156px;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    min-height: 100px;
+    width: 530px;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.navigation__item {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  height: 58px;
+  background-color: $light;
+  margin-bottom: 33px;
+  vertical-align: middle;
+  padding-top: 14px;
+  position: relative;
+
+  &--phone {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    width: 7px;
+    height: 12px;
+    content: "";
+    background-image: url("../img/arrow-right.png");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+  }
+}
+
+.navigation__link {
+  font-family: 'Montserrat-Semibold', "Arial", sans-serif;
+  color: $dark;
+
+  &:hover {
+    color: $bright;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.page-header__wrapper--closed .page-header__navigation {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__wrapper--nojs .page-header__navigation {
+  display: block;
+}

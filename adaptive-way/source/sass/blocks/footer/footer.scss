@@ -1,0 +1,112 @@
+.footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 735px;
+    display: grid;
+    grid-template-columns: 53% 47%;
+    grid-template-rows: 287px 208px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 271px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 271px;
+    width: 1170px;
+  }
+}
+
+.footer__trip-block {
+  padding-bottom: 64px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 350px;
+    height: 300px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 271px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 412px;
+    right: 16px;
+    width: 288px;
+    height: 1px;
+    content: "";
+    background-color: $separater;
+
+    @media (min-width: $tablet-width) {
+      transform: rotate(90deg);
+      top: 168px;
+      right: -139px;
+      width: 177px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 125px;
+      right: -132px;
+      width: 189px;
+    }
+  }
+}
+
+.footer__contacts-block {
+  padding-bottom: 40px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 293px;
+    padding-top: 82px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 3px;
+    padding-top: 33px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 154px;
+    right: 16px;
+    width: 288px;
+    height: 1px;
+    content: "";
+    background-color: $separater;
+
+    @media (min-width: $tablet-width) {
+      top: 287px;
+      right: -47px;
+      width: 725px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 125px;
+      right: -193px;
+      width: 189px;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.footer__corp-block {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}

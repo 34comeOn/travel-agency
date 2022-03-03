@@ -1,0 +1,39 @@
+.spec {
+  width: 215px;
+  margin: 0 auto;
+  padding-left: 27px;
+  padding-bottom: 37px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 57px;
+    width: 238px;
+  }
+}
+
+.spec__item {
+  text-align: start;
+  line-height: 30px;
+  padding-bottom: 12px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    line-height: 28px;
+    padding-bottom: 21px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 7px;
+    right: 227px;
+    width: 14px;
+    height: 12px;
+    content: "";
+    background-image: url("../img/check-mark.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      right: 244px;
+    }
+  }
+}

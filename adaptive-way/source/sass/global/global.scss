@@ -1,0 +1,276 @@
+body {
+  font-family: "Montserrat-Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $dark;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  min-width: 320px;
+  min-height: 100%;
+  position: relative;
+
+  display: grid;
+  grid-template-rows: min-content min-content 880px;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    grid-template-rows: min-content min-content 496px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    grid-template-rows: 100px min-content 271px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  margin: 0;
+}
+
+.text {
+  margin: 0 auto;
+}
+
+.button {
+  font-family: "Montserrat-Medium", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $white;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--basis {
+    background-color: $bright;
+    width: $mobile-content;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: $bright-hover;
+    }
+
+    &:active {
+      background-color: $bright-hover;
+    }
+  }
+
+  &--link {
+    justify-content: start;
+    padding-left: 40px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: 248px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 340px;
+      height: 75px;
+      margin-left: 570px;
+      font-size: 12px;
+    }
+
+    &:after {
+      position: absolute;
+      top: 17px;
+      right: 39px;
+      width: 16px;
+      height: 16px;
+      content: "";
+      background-image: url("../img/arrow-down.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        top: 30px;
+      }
+    }
+  }
+
+  &--description {
+    padding-top: 3px;
+
+    @media (min-width: $tablet-width) {
+      width: 248px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      height: 75px;
+      width: 250px;
+      font-size: 12px;
+      padding-top: 30px;
+    }
+  }
+
+  &--price {
+    @media (min-width: $tablet-width) {
+      width: 288px;
+    }
+  }
+
+  &--feedback {
+    @media (min-width: $tablet-width) {
+      width: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 176px;
+      font-size: 12px;
+    }
+  }
+
+  &--tour {
+    position: absolute;
+    left: -1px;
+    bottom: -3px;
+
+    @media (min-width: $desktop-width) {
+      left: 28px;
+      width: 310px;
+      height: 75px;
+      bottom: 28px;
+      font-size: 12px;
+    }
+  }
+
+  &--buy-popup {
+    @media (min-width: $tablet-width) {
+      width: 175px;
+      font-size: 12px;
+    }
+  }
+}
+
+.contacts-phone {
+  color: $bright;
+  letter-spacing: 1px;
+  text-decoration: underline;
+
+  &--footer {
+    letter-spacing: 0;
+    padding-left: 36px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 102px;
+    }
+
+    &::before {
+      top: -4px;
+      right: 229px;
+      background-image: url("../img/phone-icon.svg");
+
+      @media (min-width: $tablet-width) {
+        right: 197px;
+      }
+    }
+  }
+
+  &--navigation {
+    &::before {
+      top: 19px;
+      right: 228px;
+      background-image: url("../img/phone-icon-black.svg");
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../img/phone-icon-orange.svg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: 225px;
+      font-size: 16px;
+      padding-top: 17px;
+    }
+  }
+
+  &--prices{
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      text-align: left;
+      display: block;
+      padding-left: 140px;
+      position: relative;
+
+      &::before {
+        top: -1px;
+        right: 273px;
+        background-image: url("../img/phone-icon-orange.svg");
+      }
+    }
+  }
+
+  &--icon {
+    &::before {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      content: "";
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.contacts__email {
+  padding-left: 50px;
+  font-size: 14px;
+  color: $bright;
+  padding-bottom: 22px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 102px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    right: 258px;
+    width: 26px;
+    height: 20px;
+    content: "";
+    background-image: url("../img/envelope-icon.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      right: 207px;
+    }
+  }
+}

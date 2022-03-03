@@ -1,0 +1,22 @@
+.trip-column__list {
+  display: flex;
+  height: 123px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.trip-column__item {
+  display: block;
+  width: 153px;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  color: $opacity-light;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 125px;
+    text-align: left;
+  }
+}

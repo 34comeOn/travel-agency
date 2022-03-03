@@ -1,0 +1,60 @@
+.tour-menu__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 36px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    height: 2px;
+    width: 304px;
+    background-color: $opacity-verylight;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 751px;
+      bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 899px;
+      left: 0;
+      bottom: 100px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 112px;
+  }
+}
+
+.tour-menu__item {
+  color: $opacity-verylight;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Montserrat-Medium", "Arial", sans-serif;
+  font-weight: 500;
+  padding-left: 16px;
+  padding-right: 84px;
+
+  &:hover {
+    color: $bright;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0px;
+    padding-right: 96px;
+  }
+}

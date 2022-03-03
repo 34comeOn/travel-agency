@@ -1,0 +1,89 @@
+.tour-card {
+  padding-top: 30px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  min-height: 630px;
+  margin-bottom: 30px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 288px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 198px;
+    right: 19px;
+    width: 248px;
+    height: 1px;
+    content: "";
+    background-color: $opacity-verylight;
+
+    @media (min-width: $desktop-width) {
+      top: 189px;
+      right: 24px;
+      width: 312px;
+    }
+  }
+
+  border: 1px solid $opacity-verylight;
+
+  &:hover {
+    border: 3px solid $bright;
+
+    &:after {
+      background-color: $bright;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+  }
+}
+
+.tour-card__title {
+  font-size: 23px;
+  letter-spacing: 1px;
+  padding-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    width: 191px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 27px;
+    padding-right: 39px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+.tour-card__price {
+  font-family: "Montserrat-Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding-bottom: 14px;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    vertical-align: top;
+    padding-top: 10px;
+  }
+}
+
+.tour-card__descriprion {
+  width: 248px;
+  margin: 0 auto;
+  line-height: 24px;
+  padding-bottom: 33px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 27px;
+    width: 270px;
+    padding-bottom: 62px;
+  }
+}

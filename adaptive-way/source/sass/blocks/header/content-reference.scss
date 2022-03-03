@@ -1,0 +1,12 @@
+.content-reference {
+  font-size: 20px;
+  line-height: 28px;
+  padding-left: 16px;
+
+  @media (min-width: $desktop-width) {
+    width: 153px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

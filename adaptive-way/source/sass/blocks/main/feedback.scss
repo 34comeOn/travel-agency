@@ -1,0 +1,124 @@
+.feedback {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 130px;
+  }
+}
+
+.feedback__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $light;
+  padding-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 455px;
+    background-image: url("../img/gallery/feedback/feedback-back.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+    background-image: url("../img/gallery/feedback/feedback-back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+  }
+}
+
+.feedback__form-block {
+  width: $mobile-content;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    position: relative;
+    top: 70px;
+    width: 658px;
+    height: 311px;
+    box-shadow: 0px 4px 30px rgba(41, 54, 66, 0.1);
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 258px;
+    height: 315px;
+  }
+}
+
+.feedback__instruction {
+  @media (min-width: $tablet-width) {
+    line-height: 13px;
+    padding-bottom: 14px;
+  }
+}
+
+.feedback__title {
+  padding-top: 52px;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.feedback__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.feedback__list {
+  width: $mobile-content;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 558px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 6px;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 7px;
+    top: 9px;
+    left: 15px;
+    background-image: url("../img/asterisk.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 65px;
+    }
+  }
+}
+
+.feedback__input {
+  width: $mobile-content;
+  padding: 0;
+  margin: 0;
+  height: 49px;
+  font-family: 'Montserrat-Regular', "Arial", sans-serif;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 269px;
+    height: 49px;
+    margin: 0 0 20px;
+  }
+
+  &--phone {
+    padding-left: 24px;
+  }
+}
